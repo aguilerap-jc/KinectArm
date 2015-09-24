@@ -524,23 +524,23 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
             const int wrist_left_y_l_max = 72;
 
             if (wristLeftY < wrist_left_y_M_max)
-                datoBrazo = "S";
+                datoBrazo = "I";
             else if (wristLeftY >= wrist_left_y_M_max && wristLeftY < wrist_left_y_L_max)
-                datoBrazo = "R";
+                datoBrazo = "H";
             else if (wristLeftY >= wrist_left_y_L_max && wristLeftY < wrist_left_y_K_max)
-                datoBrazo = "Q";
+                datoBrazo = "G";
             else if (wristLeftY >= wrist_left_y_K_max && wristLeftY < wrist_left_y_o_min)
-                datoBrazo = "P";
+                datoBrazo = "F";
             else if (wristLeftY >= wrist_left_y_o_min && wristLeftY <= wrist_left_y_o_max)
-                datoBrazo = "t";
+                datoBrazo = "j";
             else if (wristLeftY > wrist_left_y_o_max && wristLeftY <= wrist_left_y_n_max)
-                datoBrazo = "s";
+                datoBrazo = "i";
             else if (wristLeftY > wrist_left_y_n_max && wristLeftY <= wrist_left_y_m_max)
-                datoBrazo = "r";
+                datoBrazo = "h";
             else if (wristLeftY > wrist_left_y_m_max && wristLeftY <= wrist_left_y_l_max)
-                datoBrazo = "q";
+                datoBrazo = "g";
             else if (wristLeftY > wrist_left_y_l_max)
-                datoBrazo = "p";
+                datoBrazo = "f";
 
             datosBrazo[3] = datoBrazo;
         }
